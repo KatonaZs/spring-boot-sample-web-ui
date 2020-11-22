@@ -2,18 +2,8 @@
 <configuration>
    <timestamp key="byDay" datePattern="yyyyMMdd'T'HHmmss"/>
    
-   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-      <encoder>
-         <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-      </encoder>
-   </appender>
-
-   <root level="info">
-      <appender-ref ref="STDOUT" />
-   </root>
-   
    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-     <file>${USER_HOME}/myApp.log</file>
+     <file>/home/zsombor/Desktop/myApp.log</file>
       <encoder>
          <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
       </encoder>
